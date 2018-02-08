@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href=http://www.freshdesignweb.com/wp-content/themes/fv28/images/icon.ico />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    
+</br></br></br>
+<div style="margin-left:60px;">
+<h2><strong>TRUSTED SITES</strong></h2>
+<div class="numberlist">
+ <ol id="whitelist_ol">
+ </ol>
+</div>
+<input id="whitelist_input" class="dap_text_box" type="text" name="" value="" placeholder="Mark a new site as Trusted"/>
+	<input id="whitelist_button" type="image" src="http://www.threetiermedia.com/wp-content/uploads/2015/04/plus.png" alt="Submit" width="40" height="40" style="position: relative; top: 15px;" />
+</div>
+
+
+</br></br>
+<div style="margin-left:60px;">
+<h2><strong>SUSPICIOUS SITES</strong></h2>
+<div class="numberlist">
+ <ol id="blacklist_ol">
+  
+ </ol>
+</div>
+<input id="blacklist_input" class="dap_text_box" type="text" name="" value="" placeholder="Mark a new site as Suspicious"/>
+	<input id="blacklist_button" type="image" src="http://www.threetiermedia.com/wp-content/uploads/2015/04/plus.png" alt="Submit" width="40" height="40" style="position: relative; top: 15px;"/>
+</div>
+
+<style>
+
+
+.dap_text_box { 
+background:#F8F8F8;
+color:#999999;
+border:1px solid #DCDCDC;
+border-radius:8px ;
+font-size:16px ;
+height: 30px ;
+line-height:30px ;
+width: 500px ;
+padding: 8px ;
+box-shadow: 0px 1px 8px #DCDCDC; 
+-webkit-box-shadow: 0px 1px 8px #DCDCDC; 
+-moz-box-shadow: 0px 1px 8px #DCDCDC; 
+}
+
+body {
+  background-color: #151517;
+}
+
+/* CSS reset */
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+img { 
+	border:0;
+}
+header{
+	display: block;
+}
+/* General Demo Style */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	//background:url(images/bg.png);
+	background-color: #E1E1E1;
+	font-size: 14px;
+	color: #3a2127;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+#container{
+	position: relative;
+}
+.clr{
+	clear: both;
+}
+#container > header{
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+#container > header h1{
+	position: relative;
+	color: #275973;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 25px;
+	padding: 0px 0px 5px 0px;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+#container > header h1 strong{
+	font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+	padding:0px 5px 0px 5px;
+	line-height:35px; 
+	color:#275973;
+	font-size:28px;
+	text-transform: uppercase;
+}
+#container > header h1 span{
+	font-family: 'Alegreya SC', Georgia, serif;
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+	font-weight: 400;
+	font-style: italic;
+	color:#5a99ba;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+#container > header h3{
+	font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+	border-bottom:2px solid #999;
+	width:200px;
+	margin:0 auto;
+}
+#container > header h3 a{
+	text-decoration:none;
+}
+#container > header h3 a:hover{
+	text-decoration:underline;
+}
+/* Buttom Style */
+.freshdesignweb-top{
+	text-align:center;
+	color:#275973;
+	line-height: 44px;
+	font-size: 11px;
+    background: rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+	position: relative;
+	box-shadow: 3px 0px 5px rgba(0,0,0,0.2);
+}
+.freshdesignweb-top a{
+	color:#fcca00;
+}
+.freshdesignweb-top a:hover{
+	color:#0b2f42;
+}
+.freshdesignweb-top h1{
+	margin:0 auto;
+	width:490px;
+	background:url(images/logo.png) no-repeat;
+	font-weight:bold;
+	font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size:36px;
+	text-shadow: 2px 2px 0px #F2F2F2, 1px 2px 0px #B1B1B2;
+}
+/* Buttom Style */
+.freshdesignweb-buttom{
+	font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+	color:#009;
+	line-height: 24px;
+	font-size: 11px;
+    background: rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+	position: relative;
+	box-shadow: 3px 0px 5px rgba(0,0,0,0.2);
+}
+.freshdesignweb-buttom a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.freshdesignweb-buttom a:hover{
+	background:#FFF;
+}
+.freshdesignweb-buttom span.right{
+	float: right;
+	font-weight:bold;
+}
+.freshdesignweb-buttom span.right a{
+	display: block;
+}
+.freshdesignweb{ 
+    margin:0 auto;
+	width:650px;
+}
+
+
+.freshdesignweb-demo a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.freshdesignweb-demo a:hover{
+	background:#FFF;
+}
+
+
+
+/* css list sprites background ------------- */
+
+#listsprites {float:left; margin:0px; font:14px/16px 'lucida grande', tahoma, verdana, arial, sans-serif;}
+#listsprites a {border:0; color:#3B5998; text-decoration:none; line-height:30px;}
+#listsprites a:hover,
+#listsprites a:focus,
+#listsprites a:active {text-decoration:underline; background:transparent;}
+#listsprites .user {overflow:hidden; margin:0 0 10px;}
+#listsprites .user img {float:left; margin:0 8px 0 0;}
+#listsprites .user a {display:block;}
+#listsprites .fn {padding:3px 0; font-weight:bold;}
+#listsprites ul {width:290px; padding:0; margin:0; list-style:none;}
+#listsprites li a {display:block; padding:3px 8px 4px 6px;}
+#listsprites li a:hover,
+#listsprites li a:focus,
+#listsprites li a:active {
+	text-decoration:underline; 
+    -moz-box-shadow: 0px 0px 3px #403f40;
+    -webkit-box-shadow: 0px 0px 3px #403f40;
+    box-shadow: 0px 0px 3px #403f40;
+	}
+#listsprites li.current a {font-weight:bold; color:#333; background:#D8DFEA;}
+
+#listsprites li a:before {
+    content:"";
+    float:left;
+    width:28px;
+    height:30px;
+    margin:0 6px 0 0;
+    background:url(images/sprite.png);
+}
+
+#listsprites .facebook a:before {background-position:0 -0px;}
+#listsprites .twitter a:before {background-position:0 -35px;}
+#listsprites .rss a:before {background-position:0 -70px;}
+#listsprites .digg a:before {background-position:0 -108px;}
+#listsprites .youtube a:before {background-position:0 -148px;}
+
+/* Eng css list sprites background -------------- */
+
+
+/* css list with numeber circle background -------------- */
+.numberlist{
+	width:450px;
+
+}
+.numberlist ol{
+	            counter-reset: li;
+				list-style: none;
+				*list-style: decimal;
+				font: 15px 'trebuchet MS', 'lucida sans';
+				padding: 0;
+				margin-bottom: 2em;
+
+}
+.numberlist ol ol{
+				margin: 0 0 0 2em;
+			}
+			
+.numberlist a{
+				position: relative;
+				//display: block;
+				padding: .4em .4em .4em 2em;
+				*padding: .4em;
+				margin: .5em 0;
+				background: #FFF;
+				color: #444;
+				text-decoration: none;
+				-moz-border-radius: .3em;
+				-webkit-border-radius: .3em;
+				border-radius: .3em;
+			}
+
+.numberlist a:hover{
+				background: #cbe7f8;
+				text-decoration:underline;
+			}
+.numberlist a:before{
+				content: counter(li);
+				counter-increment: li;
+				position: absolute;	
+				left: -1.3em;
+				top: 50%;
+				margin-top: -1.3em;
+				background: #87ceeb;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border: .3em solid #fff;
+				text-align: center;
+				font-weight: bold;
+				-moz-border-radius: 2em;
+				-webkit-border-radius: 2em;
+				border-radius: 2em;
+				color:#FFF;
+			}
+
+/* End css list with numeber circle background -------------- */
+
+
+
+
+/* css list style with arrow images  -------------- */
+.imglist ul{
+	margin:0px;
+}
+.imglist li{
+	font-size:14px;
+	margin-left:25px;
+	padding:0px;
+	list-style:url(images/arrow.png);
+	line-height:30px;
+}
+.imglist li a:link, .imglist li a:visited{
+	color:#1e598e;
+	text-decoration:none;
+
+}
+.imglist li a:hover{
+	color:#0A7CAF;
+	padding:2px;
+    -moz-box-shadow: 0px 0px 12px #9e9ea3;
+    -webkit-box-shadow: 0px 0px 12px #9e9ea3;
+    box-shadow: 0px 0px 12px #9e9ea3;
+    border:none 0px #000000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* End css list style with arrow images  -------------- */
+</style>
+<script type="text/javascript" src="../js/manage.js"></script>
+</body>
+</html>

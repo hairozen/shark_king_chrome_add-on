@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirm</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../jquery-ui.js"></script>
+	<link href="../jquery-ui.css" type="text/css" rel="stylesheet" />
+</head>
+<style type="text/css">
+	.myButton {
+		-moz-box-shadow:inset 0px 0px 0px 0px #91b8b3;
+		-webkit-box-shadow:inset 0px 0px 0px 0px #91b8b3;
+		box-shadow:inset 0px 0px 0px 0px #91b8b3;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+		background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+		background-color:#768d87;
+		-moz-border-radius:9px;
+		-webkit-border-radius:9px;
+		border-radius:9px;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:28px;
+		font-weight:bold;
+		padding:23px 76px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2b665e;
+	}
+	.myButton:hover {
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+		background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+		background-color:#6c7c7c;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+	table
+	{ 
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.cell {
+	  height:200px;
+	    width:200px;
+	  border:solid;
+	  float:left;
+	  margin:20px;
+	}
+	.item {
+	  height:200px;
+	  width:200px;
+		display:table-cell;
+	  vertical-align:middle;
+	}
+	.image {
+	  width: 100%;
+	  background-color:red;
+	  margin:0 auto;
+	  max-width:100%;
+	}
+	.table {
+		width: 80%;
+    	margin: 0 auto;
+	}
+	img {
+	  height:200px;
+	  width:200px;
+	  margin:0 auto;
+	  max-width:100%;
+	}
+	p {
+		text-align: center;
+	}
+</style>
+<body>
+<center><h1>You are about to enter a trusted site: <div id="trusted" style="max-width: 100%; max-height: 100%;"></div></h1></center>
+<table>
+  <tr>
+     <td><a class="myButton" id="back">Back</a></td>
+  </tr>
+</table>
+<div class="table">
+	<div class="cell">
+	 	<div class="item">
+		    <img>
+		</div>
+	 </div>
+	 <div class="cell">
+	 	<div class="item">
+		    <img>
+		</div>
+	 </div>
+	 <div class="cell">
+	 	<div class="item">
+		    <img>
+		</div>
+	 </div>
+	 <div class="cell">
+	 	<div class="item">
+		    <img>
+		</div>
+	 </div>
+</div>
+ 
+</body>
+<script type="text/javascript" src="../js/confirm.js"></script>
+
+</html>

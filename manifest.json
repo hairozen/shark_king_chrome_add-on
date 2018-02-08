@@ -1,0 +1,78 @@
+{
+  "name": "Shark-King",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "cookies",
+	"webNavigation",
+	"contextMenus"
+  ],
+  "web_accessible_resources": [
+    "js/jquery.js",
+    "js/jquery.simplemodal.js",
+    "html/confirm.html",
+    "html/init.html",
+    "html/manage.html",
+	"html/post_explanation_eng.html",
+	"html/post_explanation_heb.html",
+	"html/pre_explanation.html",
+	"html/before_final_test.html",
+	"html/init_done_eng.html",
+	"html/init_done_heb.html",
+	"html/contact.html",
+	"html/how_to_check.html",
+    "images/facebookBar.png",
+	"images/button_protection.png",
+	"images/image_protection.png",
+	"images/login_safely.png",
+	"images/mark_as_trusted.png",
+	"images/settings.png",
+	"images/mark_as_suspect.png",
+	"images/report_suspect_ad.png",
+	"images/menu_message.png",
+	"images/tip.png",
+	"images/test_me.png",
+	"images/contact.png",
+	"images/share.png",
+	"images/hebrew.png",
+	"images/english.png",
+	"icons/good19.png",
+	"icons/icon19.png",
+	"images/ui-icons_222222_256x240.png",
+	"images/ui-icons_888888_256x240.png",
+	"images/ui-icons_454545_256x240.png",
+	"images/ui-icons_2e83ff_256x240.png",
+	"images/ui-icons_cd0a0a_256x240.png",
+	"images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+	"ui-bg_glass_75_e6e6e6_1x400.png"
+  ],
+  "version": "0.3.1",
+  "manifest_version": 2,
+  "description": "Train yourself to detect phishing websites and attacks",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "background": {
+    "scripts": ["js/jquery.js", "jquery-ui.js", "js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Shark-King",
+    "default_popup": "browser_action/browser_action.html",
+    "js": ["js/jquery.js", "jquery-ui.js", "js/content.js", "js/jquery-1.12.3.min.js", "js/popup_script.js"],
+    "css": ["jquery-ui.css"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery.js", "jquery-ui.js", "js/content.js", "js/jquery.simplemodal.js", "js/script.js"],
+      "css": ["jquery-ui.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
